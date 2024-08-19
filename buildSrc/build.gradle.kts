@@ -20,6 +20,7 @@ java {
 }
 dependencies{
     implementation(gradleApi())
-//    implementation("com.android.tools.build:gradle:3.3.3")
+    //TODO fix error 'The request for this plugin could not be satisfied because the plugin is already on the classpath with an unknown version, so compatibility cannot be checked.'
+    //implementation("com.android.tools.build:gradle:7.4.2") //fix the bug above to uncomment this dependency declaration
     implementation("org.javassist:javassist:3.30.2-GA")
 }
