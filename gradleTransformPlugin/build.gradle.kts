@@ -32,6 +32,11 @@ dependencies {
     implementation("com.android.tools.build:gradle:7.2.0")
     implementation("org.javassist:javassist:3.30.2-GA")
     implementation(kotlin("stdlib-jdk8"))
+    implementation("org.ow2.asm:asm:9.2")
+    implementation("org.ow2.asm:asm-util:9.2")
+    implementation("org.ow2.asm:asm-commons:9.2")
+    implementation("com.android.tools:common:30.1.0")
+
 }
 kotlin {
     jvmToolchain(17)
