@@ -1,6 +1,7 @@
 plugins {
     `java-gradle-plugin`
     `maven-publish`
+    kotlin("jvm")
 }
 gradlePlugin {
     plugins {
@@ -26,12 +27,12 @@ publishing {
         }
     }
 }
-java {
-    sourceCompatibility = JavaVersion.VERSION_17
-    targetCompatibility = JavaVersion.VERSION_17
-}
-dependencies{
+dependencies {
     implementation(gradleApi())
-    implementation("com.android.tools.build:gradle:3.3.3")
+    implementation("com.android.tools.build:gradle:7.2.0")
     implementation("org.javassist:javassist:3.30.2-GA")
+    implementation(kotlin("stdlib-jdk8"))
+}
+kotlin {
+    jvmToolchain(17)
 }
