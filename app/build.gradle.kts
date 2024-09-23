@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     id("TransformPlugin")
+    //Before executing "./gradlew publishAllPublicationsToMavenRepository", you need to comment the above code first.
+    //otherwise, it will cause an error.
 }
 
 android {
